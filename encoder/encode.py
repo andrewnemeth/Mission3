@@ -28,4 +28,4 @@ if __name__ == "__main__":
     print "\"" + estring + "\"" # Print the encoded string
     destring = decode(estring) # Decode the encoded string
     print "\"" + destring + "\"" # Print the decode of the encoded string
-    assert string is destring # Make sure the decoded string and the original match
+    assert string == destring # Make sure the decoded string and the original match
