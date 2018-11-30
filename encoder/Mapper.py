@@ -50,9 +50,9 @@ def updateList(latestTime, latestList):
     minSinceUpdate = minutesSince(newTime, latestTime)
     if(minSinceUpdate >= len(latestList)):
         latestTime, latestList = reorder(latestTime, latestList)
-        print("Update Time! :)")
-    else:
-        print("Same Time, same list :/")
+        # print("Update Time! :)")
+    # else:
+        # print("Same Time, same list :/")
     return latestTime, latestList
 
 
@@ -60,9 +60,9 @@ def updateListToTime(latestTime, latestList, newTime):
     minSinceUpdate = minutesSince(newTime, latestTime)
     if(minSinceUpdate >= len(latestList)):
         latestTime, latestList = reorder(latestTime, latestList)
-        print("Update Time! :)")
-    else:
-        print("Same Time, same list :/")
+        # print("Update Time! :)")
+    # else:
+        # print("Same Time, same list :/")
     return latestTime, latestList
 
 
@@ -132,7 +132,7 @@ def reorder(latestTime, latestList, verbose=False):
 
 def currentChannel(latestTime, latestList):
     latestTime, latestList = updateList(latestTime, latestList)
-    print(latestTime, latestList)
+    # print(latestTime, latestList)
     return latestList[0]
 
 
